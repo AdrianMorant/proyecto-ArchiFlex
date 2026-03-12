@@ -1,0 +1,184 @@
+html {
+  height: 100%;
+  margin: 0;
+
+  background: linear-gradient(
+    to right,    
+    white 50%,
+    #DEDAD5 50% 
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  margin:0
+}
+
+.container{
+  width: 1350px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+position: relative;
+padding: 15px;
+margin-bottom: 60px;
+}
+
+.logo{
+  position: absolute;
+
+}
+
+header nav{
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+header nav ul{
+  display: flex;
+  text-align: center;
+}
+
+header nav ul li{
+  list-style: none;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  padding:15px 25px;
+  color: #424241
+}
+
+main{
+  display: flex;
+  gap: 50px;
+  position: relative;
+}
+main section{
+  width: 400px;
+}
+
+.heroizquierda{
+  width: 50%;
+  z-index: 2;
+  position: absolute;
+  
+}
+
+.heromedio{
+  position: relative;
+  z-index: 1;
+}
+
+main .heromedio img, main .heroderecha img{
+  width: 400px;
+  height: 550px;
+}
+
+.heroizquierda article:first-child h1{
+  font-family: "Playfair Display", serif;
+  font-size: 68px;
+  font-weight: 400;
+  color: #424241;
+}
+
+.heroizquierda article:first-child p{
+  font-size: 20px;
+  color:#424241;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.heroizquierda .started{
+  color:#FAF8F5;
+  background-color: #424241;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+
+}
+
+.heroizquierda .learn{
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  color:#424241;
+}
+
+.heroizquierda .started,
+.heroizquierda .learn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.numeros{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+  width: 85%;
+}
+
+.numeros div{
+  width: 107px; 
+}
+
+.numeros div h3{
+  font-size: 45px;
+  font-weight: 500;
+  margin: 0px;
+  color: #424241;
+}
+
+.numeros div p{
+  color:#9E9D9B;
+  font-size: 16px;
+  margin:0px
+}
+
+.prueba{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: numero;
+}
+
+.lista h3{
+  font-size: 16px;
+  font-weight: 400;
+  color: #424241;
+}
+
+.lista{
+  background-color: #FAF8F5;
+  padding: 20px;
+  padding-left: 30;
+  width: 80%;
+  position: relative;
+  right: -6%;
+  top: -30px;
+}
+
+.prueba li{
+  counter-increment: numero;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top:30px;
+  font-size: 22px;
+  color:#424241;
+}
+
+.prueba li::before{
+  content: counter(numero, decimal-leading-zero);
+  color: #b5b2ad; /* color de los números */
+  font-weight: 600;
+}
